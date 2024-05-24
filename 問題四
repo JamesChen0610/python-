@@ -1,14 +1,13 @@
 import random
 
 num = random.randint(1, 100)
-n=1
-a=int(input())
-if a==num:
-        print("正確")
+n=0
+a=0
 while a!=num :
     a=int(input())
     if a==num:
         print("正確")
+        n=n+1
     elif a>num:
         print("太高了")
         n=n+1
@@ -16,4 +15,5 @@ while a!=num :
         n=n+1
         print("太低了")
 print(n)
+
 
